@@ -1,2 +1,4 @@
 .vagrant
 *.log
+h2o/server.crt
+h2o/server.key
