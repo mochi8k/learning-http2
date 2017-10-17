@@ -1,9 +1,10 @@
-const fs = require('fs');
-const options = {
-    key: fs.readFileSync('./server.key'),
-    cert: fs.readFileSync('./server.crt')
-};
+const express = require('express');
+const app = express();
 
-require('http2').createServer(options, function(request, response) {
-    response.end('Hello world!');
-}).listen(3000);
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
