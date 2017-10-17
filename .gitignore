@@ -1,4 +1,5 @@
 .vagrant
 *.log
-h2o/server.crt
-h2o/server.key
+server.crt
+server.key
+server/node_modules
